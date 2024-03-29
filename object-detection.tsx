@@ -6,7 +6,7 @@ import { load as cocoSSDLoad, ObjectDetection as CocoObjectDetection } from "@te
 // import * as tf from "@tensorflow/tfjs";
 require("@tensorflow/tfjs-backend-cpu");
 require("@tensorflow/tfjs-backend-webgl");
-import { renderPredictions } from "@/app/gay-detector/render-predictions";
+import { renderPredictions } from "./render-predictions";
 
 let detectInterval: NodeJS.Timeout;
 
