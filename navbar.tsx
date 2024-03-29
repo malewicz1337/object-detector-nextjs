@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { cn } from "./cn";
+import { cn } from "./utilities/cn";
 
 const navItemStyle = (isActive: Boolean) =>
   `inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors ${
@@ -19,11 +19,7 @@ const Navbar = () => {
 
   return (
     <nav className="overflow-hidden">
-      <ul
-        className={cn(
-          "group flex flex-1 list-none items-center justify-center space-x-1",
-        )}
-      >
+      <ul className={cn("group flex flex-1 list-none items-center justify-center space-x-1")}>
         {navItems.map((item) => (
           <Link
             key={item.name}
@@ -32,7 +28,9 @@ const Navbar = () => {
             className="block text-white"
           >
             <li
-              className={`${navItemStyle(pathname === item.path)} transition-colors duration-700 hover:bg-gray-500 hover:text-black focus:outline-none`}
+              className={`${navItemStyle(
+                pathname === item.path
+              )} transition-colors duration-700 hover:bg-gray-500 hover:text-black focus:outline-none`}
             >
               {item.name}
             </li>

@@ -13,6 +13,12 @@ This repository contains the code for a web-based object detection application b
 
 To set up this project, you need to encapsulate this route into your Nextjs project.
 
+Install dependencies:
+
+```bash
+npm install tailwind-merge clsx lodash react-webcam framer-motion @tensorflow/tfjs-backend-cpu @tensorflow/tfjs-backend-webgl @tensorflow-models/coco-ssd
+```
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
