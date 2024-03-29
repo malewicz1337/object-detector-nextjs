@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { cn } from "@/utilities/cn";
+import { cn } from "./cn";
 
 const navItemStyle = (isActive: Boolean) =>
   `inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors ${
