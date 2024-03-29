@@ -1,7 +1,7 @@
 "use client";
 
-import ObjectDetection from "@/app/gay-detector/object-detection";
-import { Button } from "@/components/ui/moving-border-button";
+import ObjectDetection from "./object-detection";
+import { Button } from "./moving-border-button";
 import { useState } from "react";
 import EscapeButton from "./escape-button";
 import Link from "next/link";
